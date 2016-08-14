@@ -37,10 +37,10 @@ image::../images/interact002.png[]
 [TIP]
 Wie an vielen Orten auf Jeedom, wenn man die Maus ganz nach links bewegt ermöglicht es, ein Schnellzugangsmenü sichtbar zu machen(Sie können es in ihrem Profil immer sichtbar machen).
 
-* En haut de page, on trouve 3 boutons :
-** *1* Le bouton "Ajouter" qui permet de créer de nouvelles interactions.
+* Oben auf der Seite, gibt es 3 Schaltflächen :
+** *1* Die Schaltfläche "Hinzufügen", ist zum erstellen neuer Interaktionen.
 ** *2* Le bouton "Régénérer" qui va recréer toutes les interactions (peut être très long > 5min).
-** *3* Le bouton "Tester" qui permet d'ouvrir un boite de dialogue pour écrire et tester une phrase.
+** *3* Die Schaltfläche "Test", öffnet ein Dialogfeld um einen Satz zu schreiben und zu testen.
 
 [TIP]
 Si vous avez une interaction qui génère les phrases pour les lumières par exemple, et que vous ajoutez un nouveau module de commande de lumière, il vous faudra soit régénérer toutes les interactions, soit aller dans l'interaction en question et la re-sauver pour créer les phrases de ce nouveau module.
