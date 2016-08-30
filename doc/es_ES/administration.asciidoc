@@ -15,17 +15,17 @@ image::../images/administration1.png[]
 
 En esta ficha, encontrará información general sobre Jeedom: 
 
-* *Nom de votre Jeedom* : peut etre réutilisé dans les scénarios ou permettre d'identifier un backup
+* * Nombre de su Jeedom *: pueden ser reutilizados en escenarios o permite identificar una copia de seguridad 
 * * * Clave API: la clave de la API a utilizar para cualquier aplicación en la API de Jeedom
-* *Clef API Pro* : utilisé pour communiquer avec le systeme de gestion de parc
+* *Clave API Pro* : utilizado para conectar con el sistema de gestión de Parque
 * *Sistema*: modelo de hardware
-* *Clef d'installation* : clef hardware de votre Jeedom sur le market. Si votre Jeedom n'apparait pas dans la liste de vos Jeedom sur le market il est conseillé de cliquer sur ce bouton
+* *Clave de instalación* : clave de hardware de su Jeedom en el market. Si tu Jeedom no aparece en la lista de tus Jeedom en el market, es recomendable hacer clic en este botón 
 * *Idioma* : Idioma de su Jeedom
 * *Duración de sesión (tiempo)*: Duración de la sesión en PHP; se aconseja no modificar este valor
 * *Fecha y hora*: Su zona horaria
-* *Serveur de temps optionnel* : permet d'ajouter un serveur de temps optionnel (à réserver aux experts)
+* *Servidor de tiempo opcional* : permite añadir un servidor de tiempo opcional (reservado para expertos) 
 * *Ignorar la verificación de tiempo*: Jeedom no verificará si el tiempo es coherente. Es útil por ejemplo si Jeedom no va a estar conectado a internet ni dispone de batería RTC.
-* *Mode* : Mode de votre Jeedom maître ou esclave, attention lors du passage en esclave : tous vos équipements, scénarios, design... seront supprimés.
+* *Modo*: Modo de Jeedom, maestro o esclavo. Atención, al pasar a esclavo, todos los dispositivos, escenas, diseños... serán eliminados
 
 ==Componentes de Jeedom
 
@@ -65,9 +65,9 @@ Parte muy importante en Jeedom, debes configurarlo correctamente de lo contrario
 ** *Estado*: Indica si la conexión de red externa es correcta
 * *Administracion avanzada: puede no aparecer dependiendo de la compatibilidad con el hardware
 ** *Desactivar la gestión de redes en Jeedom*: Jeedom no supervisará la red (deberá ser activado si Jeedom no está conectado a ninguna red)
-* *Proxy market* : permet un accès distant à votre Jeedom sans avoir besoin d'un DNS, d'une IP fixe ou d'ouvrir les ports de votre box
+* *Proxy market* : permite el acceso remoto a su Jeedom sin necesidad de un servidor DNS, una IP fija o puertos abiertos en su dispositivo
 ** *Usar DNS Jeedom*: Activars DNS Jeedom (se requiere disponer de un service pack)
-** *Statut DNS* : statut du DNS http
+** Estado DNS* : estado de http DNS
 ** *Gestión*: Permite detener y reiniciar el servicio DNS
 
 [TIP]
@@ -94,7 +94,7 @@ Al hacer clic en el color, se abre una ventana que le permite seleccionar el col
 
 image::../images/display7.png[]
 
-Vous pouvez aussi configurer ici la transparence des widgets de maniere global (qui sera la valeur par défaut, il est possible ensuite de modifier cette valeur widget par widget)
+También puede ajustar la transparencia de los widgets en una forma global (que será el valor por defecto, es posible entonces cambiar este valor del widget por widget)
 
 [TIP]
 No olvide guardar los cambios después de hacer modificaciones
@@ -139,17 +139,17 @@ image::../images/administration9.png[]
 * *Número de fallos antes de la desactivación del dispositivo*: Número de errores de comunicación con el dispositivo antes de su desactivación (un mensaje le avisará si esto ocurre)
 ** Umbrales de batería *: le permite administrar los umbrales de alertas globales sobre las baterías
 
-== Mise à jour et fichiers
+== Actualización y ficheros
 
 image::../images/administration10.png[]
 
-* Source de mise à jour : 
-* Faire une sauvegarde avant la mise à jour
-* Vérifier automatiquement si il y a des mises à jour
+* Fuente de actualización : 
+* Hacer una copia de seguridad antes de la actualización
+* Comprueba automáticamente si hay actualizaciones
 
-=== Les dépots
+== Depósitos
 
-Les dépots sont des espaces de stockage (et de service) pour pouvoir mettre des backups, récuperer des plugins, récuperer le core de jeedom....
+Los depósitos son espacios de almacenamiento (y servicio) para poder poner copias de seguridad, obtener plugins, recuperar la base de jeedom...
 
 ==== Market
 
@@ -161,19 +161,19 @@ image::../images/administration17.png[]
 * *Nombre de usuario*: Su nombre de usuario para el market
 * *Contraseña*: Su contraseña para el market
 
-==== Fichier
+==== Archivo
 
-Dépot servant à activer l'envoi de plugin par des fichiers
+Depósito para activar el  envio de ficheros de plugin
 
 image::../images/administration15.png[]
 
 ==== Github
 
-Dépot servant à relier Jeedom à Github
+Depósito utilizado para conectar Jeedom a Github
 
 image::../images/administration16.png[]
 
-* *Token* : Token pour l'accès au dépot privé
+* *Token* : Token para el acceso al depositivo privada
 * *Utilisateur ou organisation du dépot pour le core Jeedom*
 * *Nom du dépôt pour le core Jeedom*
 * *Branche pour le core Jeedom*
