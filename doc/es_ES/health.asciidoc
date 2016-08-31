@@ -1,30 +1,30 @@
 = Salud
 
-La page de santé de Jeedom vous permet d'avoir un aperçu rapide de l'état de santé de votre Jeedom. Il indique aussi (si les plugins l'utilisent), l'état de santé par plugin
+La página de Salud de Jeedom le permite tener una rápida visión del estado de salud de su Jeedom. Asimismo, se indica (según plugins utilizados), el estado de salud del plugin
 
 Es accesible a través de  Análisis -> Salud
 
 image::../images/health1.png[]
 
-Une fois dessus, voilà ce que vous avez : 
+Una vez dentro esto es lo que verá: 
 
 image::../images/health2.png[]
 
-Vous retrouvez ici un tableau qui donne une description de ce que Jeedom verifie et du statut de celle-ci dans la 2ème colonne, enfin la dernière colonne peut vous donner des conseils de résolution si la vérification n'est pas OK
+Aquí verás una tabla que da una descripción de lo que Jeedom ha comprobado y su estado en la columna 2, finalmente la última columna aconseja sobre la posible resolución si la verificación no fue OK
 
-En dessous vous retrouvez les mêmes tableaux mais par plugin (si le plugin est compatible). Un clic sur le nom du plugin vous amène directement sur sa page de configuration
+A continuación encontrará la misma tabla pero para el plugin (si el plugin es compatible). Haga clic en el nombre del plugin, le lleva directamente a su página de configuración
 
 == Ayuda resolución
 
 === Versión PHP
 
-Pour l'instant la version 5.5 de php n'est pas obligatoire. Vous pouvez donc tout laisser comme ça pour le moment. Le jour où la version 5.5 devient obligatoire vous serez prévenu
+Por el momento en la versión 5.5 de php no es necesario, usted puede dejar todo tal y como esta. El día que la versión 5.5 sea obligatoria, se le avisará
 
 === Configuración nginx
 
 Mi configuración de nginx esta NOK, esto puede ser normal si ha cambiado el archivo/etc/nginx/sitios-disponible/default, en caso contrario haga desde SSH: 
 
-- Si vous êtes sur une mini/mini+ ou que vous ne voulez pas de /jeedom : 
+-Si estás en un mini/mini+ o que usted no usa /jeedom : 
 
 ----
 sudo su -

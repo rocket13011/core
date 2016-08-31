@@ -153,7 +153,7 @@ Los depósitos son espacios de almacenamiento (y servicio) para poder poner copi
 
 ==== Market
 
-Dépot servant à reliéer Jeedom au market, il est vivement conseillé d'utiliser ce dépot. Attention toute demande de support pourra être refusée si vous utilisé un autre de dépot que celui-ci.
+Servidor de repositiorios conectados al market de Jeedom, es recomendable utilizar este repositorio. Atención cualquier solicitud de soporte podrá ser denegada si usted utiliza otro repositorio diferente a este.
 
 image::../images/administration17.png[]
 
@@ -174,27 +174,27 @@ Depósito utilizado para conectar Jeedom a Github
 image::../images/administration16.png[]
 
 * *Token* : Token para el acceso al depositivo privada
-* *Utilisateur ou organisation du dépot pour le core Jeedom*
-* *Nom du dépôt pour le core Jeedom*
-* *Branche pour le core Jeedom*
+* *Usuario u organización del repositorio para el core de Jeedom *.
+* *Nombre del repositorio para el core de Jeedom *.
+* *Branch para el core de jedoom*
 
 ==== Samba
 
-Dépot permettant d'envoyer automatique un backup de jeedom sur un partage samba (ex NAS Synology)
+Repositorio para enviar un backup automático de jeedom en un recurso compartido de samba (ej. NAS Synology)
 
 image::../images/administration18.png[]
 
-* *[Backup] IP* : IP du serveur Samba
-* *[Backup] Utilisateur* : Nom d'utilisateur pour la connexion (les connexions anonyme ne sont pas possible)
-* *[Backup] Mot de passe* : Mot de passe de l'utilisateur
-* *[Backup] Partage* : Chemin du partage (attention à bien s'arreter au niveau du partage)
-* *[Backup] Chemin* : Chemin dans le partage (à mettre en relatif), celui-ci doit exister
+* *[Backup] IP* : IP del servidor Samba
+* *[Usuario backup] *: Nombre de usuario para la conexión (conexiones anónimas no son posibles)
+* *[Contraseña backup]* : contraseña del usuario
+* *[Backup] recurso* : La ruta del recurso compartido (Asegúrese de indicar la ruta compartida correcta)
+* *[Ruta Backup] *: Ruta para compartirr (para ser relativa),  debe existir
 
 [IMPORTANTE]
-Il vous faudra peut etre installer le package smbclient pour que le dépot fonctionne
+Tal vez necesite instalar el paquete smbclient para que repositorio funcione
 
 [IMPORTANTE]
-Jeedom doit être le seul à écrire dans ce dossier et il doit etre vide par defaut (c'est à dire avant la configuration et l'envoi du premier backup le dossier ne doit contenir aucun fichier ou dossier)
+Jeedom debe poder escribir en esta carpeta, y debe estar vacía por defecto (es decir, que antes de hacer la configuración y enviar el primer Backup, la carpeta no puede contener ningún archivo o carpeta)
 
 ==== URL
 
