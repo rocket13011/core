@@ -1,10 +1,10 @@
-= Scénario
+= Szenario
 
 Das ist der wichtigste Teil einer Haus-Automatisierung: Die Szenarien. Das ist ein richtiges Gedächnis der Haustechnik, was es ermöglicht, mit der wirklichen Welt auf "intelligente" Art zu interagieren.
 
 == Die Szenario Seite
 
-Pour y accéder rien de plus simple, il suffit d'aller sur Outils -> Scénario : 
+Der Zugriff darauf ist einfach, gehen Sie auf Werkzeuge -> Szenario : 
 
 image::../images/scenario1.JPG[]
 
@@ -16,10 +16,10 @@ Oben findet man eine Reihe von 3 Tasten wieder :
 
 * *Hinzufügen* : um ein Szenario hinzuzufügen
 * *Szenarien deaktivieren* : um alle Szenarien zu deaktivieren
-* *Voir les variables* : permet de voir les variables, leur valeur ainsi que l'endroit où elle sont utilisées
+* *Variablen anzeigen* : erlaubt die Variablen zu sehen, ihren Wert und den Ort, wo sie verwendet werden
 
 [TIP]
-Les scénarios en rouge sont ceux qui sont désactivés
+Die Szenarien in rot sind diejenigen, die deaktiviert sind
 
 [TIP]
 Wie an vielen Orten auf Jeedom, wenn man die Maus ganz nach links bewegt ermöglicht es, ein Schnellzugangsmenü sichtbar zu machen(Sie können es in ihrem Profil immer sichtbar machen).
@@ -27,19 +27,19 @@ Wie an vielen Orten auf Jeedom, wenn man die Maus ganz nach links bewegt ermögl
 Es gibt 2 Szenario Modi : 
 
 * *Einfach* : es ermöglicht auf sehr einfache Art Szenarien zu erstellen "WENN das DANN mache das" 
-* *Avancé* : là vous pouvez tout faire mais cela demande plus de connaissances
+* *Fortschrittlich* : Sie können alles tun, aber es erfordert mehr wissen
 
 [WICHTIG]
-Il est possible de passer un scénario du mode simple au mode avancé mais pas l'inverse
+Es ist möglich, ein Szenario von einfachen Modus zum erweiterte Modus zu übergeben, aber nicht umgekehrt 
 
-Lors de la création, Jeedom va vous demander le type de scénario à faire : 
+Beim Erstellen eines Szenario wird Jeedom nach den Namen und den Typ fragen : 
 
 image::../images/scenario2.JPG[]
 
 
 == Einfacher Modus
 
-Voilà l'interface en mode simple : 
+Dies ist der Modus "Einfaches-Interface" : 
 
 image::../images/scenario9.JPG[]
 
@@ -48,21 +48,21 @@ Hier finden Sie :
 * *Name* : Der Name des Szenarios
 * *Beschreibung* : Sie können eine Beschreibung hinzufügen, was das Szenario macht und zum Beispiel Überwachung  
 * *Aktiv* : festlegen, ob das Szenario aktiv ist 
-* *Exécuter en avant plan* : permet de lancer le scénario directement et non dans un fil d'éxecution séparé. Attention cette option peut être dangereuse car elle met en pause toutes les autres actions du scénario. IL NE FAUT JAMAIS l'activer sur un scénario déclenché par une programmation horaire
-* *Dernier lancement* : la date de dernière execution du scénario
+* *Läuft im Vordergrund* : Das Szenario wird direkt ausgeführt und nicht in einem separaten Ausführungs-Thread. Bitte beachten Sie diese Option kann gefährlich sein, weil es jede andere Aktion des Szenarios anhält.  SIE SOLLTEN NIEMALS ein Szenario aktivieren was durch einen Zeitplan ausgelöst wird.
+* *Letzter Start* : Datum der letzten Szenario Ausführung
 * *Zustand* : der aktuelle Zustand des Szenarios (laufend, angehalten...)  
 
 Oben rechts finden wir :
 
-* un bouton pour faire un export texte du scénario (pratique pour le montrer sur le forum ou à l'équipe support)
-* un bouton pour avoir le log du scénario
+* eine Schaltfläche, um einen Text-Export des Szenarios zu machen (praktisch, um es auf dem Forum oder dem Supportteam zu zeigen) 
+* eine Schaltfläche, um ein Protokoll des Szenarios zu haben
 * eine Schaltfläche, um das Szenario zu Kopieren
 
 Unten links auf der Seite haben Sie die Ausführungsbedingung des Szenarios : 
 
-* *Scénario* : permet d'indiquer si le scénario est programmé (à une date et heure précise) ou s'il est provoqué (comme par exemple la détection d'un mouvement)
-* *A exécuter* : en mode programmé permet de dire s'il doit être executé une fois ou de manière répétée
-* *En date du* : s'il n'est exécuté qu'une fois alors il faut indiquer la date et l'heure
+* *Szenario* : um anzuzeigen, ob das Skript programmiert (an einer bestimmten Uhrzeit und Datum) oder wenn sie  verursacht wird (Wie die Erfassung der Bewegung)
+* *Auszuführen* : im Programmier Modus können sie sagen, ob es einmal oder wiederholt ausgeführt werden soll
+* *Datiert* : wenn es nur einmal ausgeführt wird, dann müssen sie das Datum und die Uhrzeit eingeben
 * *Häufigkeit* : im Mehrmals Modus können Sie die Wiederholungsfrequenz wählen
 
 image::../images/scenario10.JPG[]
@@ -71,26 +71,26 @@ image::../images/scenario10.JPG[]
 
 image::../images/scenario11.JPG[]
 
-* *Condition optionnelle* : permet d'activer ou non un test avant l'éxecution du scénario.
+* *optionale Bedingung* : einen Test ermöglichen oder nicht, bevor das Szenario ausgeführt wird.
 
 image::../images/scenario12.JPG[]
 
-* *Si* : permet de choisir la commande sur laquelle s'applique la condition, en cliquant sur le petit bouton à gauche
-* *Est* : permet de choisir le statut que doit avoir la commande précédente pour que les actions soient exécutées (en fonction de la commande les options peuvent changer)
+* *Wenn* : Damit können sie die Reihenfolge in der die Bedingung erfüllt ist wählen, indem Sie auf den kleinen Knopf auf der rechten Seite klicken 
+* *Ist* : Sie können den Status wählen, der der vorherige Befehl haben muss, damit die Aktion (gemäß den Befehlen können die Optionen wechseln) ausgeführt werden soll
 
-Enfin sur la droite vous avez les actions, ici très simple il suffit de cliquer sur "Ajouter une action"
+Schließlich, auf der rechten Seite haben Sie die Aktion, hier genügt es einfach "Aktion hinzufügen" anzuklicken
 
-=== Exemple allumer sur présence
+=== Beispiel, auf Anwesenheit einzuschalten
 
 image::../images/scenario13.JPG[]
 
-Voila un scénario très simple qui allume la lumière en cas de présence
+Dies ist ein sehr einfaches Szenario, das schaltet das Licht bei Anwesenheit an
 
 [TIP]
 Ce scénario sera déclenché aussi bien lors de la détection d'une présence que lors du relâchement (fin de présence), il est donc nécessaire de tester la valeur de la présence (ici déclenchée)
 
 [WICHTIG]
-Il ne faut pas oublier de faire le même genre de scénario mais pour éteindre la lumière lorsque plus personne n'est présent
+Vergessen Sie nicht die gleiche Art von Szenario zu machen, aber das Licht auszuschalten, wenn niemand anwesend ist
 
 == Erweiterter Modus
 
@@ -98,12 +98,12 @@ Hier ist ein Beispielszenario im erweiterten Modus :
 
 image::../images/scenario3.JPG[]
 
-En haut la partie générale où l'on retrouve :
+Oben finden wir den allgemeinen Teil wieder :
 
 * *Name*
 * *Gruppe* : hilft Szenarien zu organisieren
-* *Actif* : Si le scénario est actif ou non
-* *Visible* : Si le scénario est visible ou non
+* *Aktiv* : Ob das Szenario aktiv oder inaktiv sein soll
+* *Sichtbar* : Ob das Szenario sichtbar oder nicht sichtbar sein soll
 * *Eltern-Objekt* : Die Wahl zu einem übergeordneten Objekt zugewiesen zu werden oder nicht
 * *Zeitüberschreitung Sekunden (0 = unbegrenzt)* : Die maximal  erlaubte Ausführungszeit
 * *Déclencheurs* : Ensuite vient la partie des déclencheurs qui peuvent soit être un ou plusieurs événements et/ou une programmation (une heure donnée, une fréquence… Cette partie s’écrit à l’aide d’une syntaxe type crontab accessible via la touche, un assistant est disponible en cliquant sur ?
